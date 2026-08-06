@@ -14,3 +14,14 @@ header {
   width: auto;
   display: block;
 }
+
+.hidden {
+  display: none;
+}
+
+.mainButtonContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
