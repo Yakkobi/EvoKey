@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.evoKeyTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blueviolet;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
