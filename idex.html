@@ -8,21 +8,21 @@
   </head>
   <body>
     <header>
-      <img src="assets/evokey-logo.png" alt="EvoKey" class="evokeyLogo" />
+      <img src="assets/evokey-logo.png" alt="EvoKey" class="logo" />
     </header>
 
     <div class="mainMenuButtonsContainer">
-      <main id="viewMain" class="view">
+      <main id="mainMenu" class="view">
         <button id="macrosButton">Macros</button>
         <button id="settingsButton">Settings</button>
         <button id="openJsonButton">Open JSON</button>
       </main>
     </div>
 
-    <main id="viewMacros" class="view hidden">
+    <main id="macrosMenu" class="view hidden">
       <h2>Your Macros</h2>
-      <button class="backButton" data-target="viewMain">&larr; Back</button>
-      <ul id="macro-list"></ul>
+      <button class="backButton" data-target="mainMenu">&larr; Back</button>
+      <ul id="macroList"></ul>
     </main>
 
     <script src="script.js"></script>
