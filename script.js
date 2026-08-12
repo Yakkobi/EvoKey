@@ -2,6 +2,7 @@ function makeVisible(id) {
   document.querySelectorAll(".visible").forEach((visible) => {
     visible.classList.toggle("hidden", visible.id !== id);
   });
+  document.querySelector("header").classList.toggle("hidden", id !== "mainMenu");
 }
 
 document
