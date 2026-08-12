@@ -15,13 +15,19 @@ header {
   display: block;
 }
 
-.hidden {
-  display: none;
+.mainMenuButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
 }
 
-.mainButtonContainer {
-  margin-top: 20px;
+.view {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }
