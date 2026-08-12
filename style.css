@@ -15,11 +15,8 @@ header {
   display: block;
 }
 
-.mainMenuButtonsContainer {
-  display: flex;
-  flex-direction: column;
+#mainMenu {
   margin-top: 20px;
-  align-items: center;
 }
 
 .view {
