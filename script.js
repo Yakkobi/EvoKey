@@ -1,4 +1,4 @@
-function showVisible(id) {
+function makeVisible(id) {
   document.querySelectorAll(".visible").forEach((visible) => {
     visible.classList.toggle("hidden", visible.id !== id);
   });
@@ -6,8 +6,8 @@ function showVisible(id) {
 
 document
   .getElementById("macrosButton")
-  .addEventListener("click", () => showVisible("macrosMenu"));
+  .addEventListener("click", () => makeVisible("macrosMenu"));
 
 document.querySelectorAll(".backButton").forEach((button) => {
-  button.addEventListener("click", () => showVisible(button.dataset.target));
+  button.addEventListener("click", () => makeVisible(button.dataset.target));
 });
