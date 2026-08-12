@@ -1,13 +1,13 @@
-function showView(id) {
-  document.querySelectorAll(".view").forEach((view) => {
-    view.classList.toggle("hidden", view.id !== id);
+function showVisible(id) {
+  document.querySelectorAll(".visible").forEach((visible) => {
+    visible.classList.toggle("hidden", visible.id !== id);
   });
 }
 
 document
   .getElementById("macrosButton")
-  .addEventListener("click", () => showView("macrosMenu"));
+  .addEventListener("click", () => showVisible("macrosMenu"));
 
 document.querySelectorAll(".backButton").forEach((button) => {
-  button.addEventListener("click", () => showView(button.dataset.target));
+  button.addEventListener("click", () => showVisible(button.dataset.target));
 });
