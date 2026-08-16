@@ -21,7 +21,7 @@ document.querySelectorAll(".mainMenuButton").forEach((button) => {
   );
 });
 
-function normalizeKeyInputs(e) {
+function keyComboOutput(e) {
   if (e.code === "ControlLeft" || e.code === "ControlRight") return "Ctrl";
   if (e.code === "AltLeft" || e.code === "AltRight") return "Alt";
   if (e.code === "ShiftLeft" || e.code === "ShiftRight") return "Shift";
@@ -33,10 +33,10 @@ const heldKeys = new Set();
 const keyComboDisplay = document.getElementById("keyComboDisplay");
 
 document.addEventListener("keydown", (e) => {
-  heldKeys.add(normalizeKeyInputs(e));
+  heldKeys.add(keyComboOutput(e));
   keyComboDisplay.textContent = [...heldKeys].join(" + ");
 });
 
 document.addEventListener("keyup", (e) => {
-  heldKeys.delete(normalizeKeyInputs(e));
+  heldKeys.delete(keyComboOutput(e));
 });
